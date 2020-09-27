@@ -1,6 +1,8 @@
 # %% [markdown]
 # # Will ACB be confirmed before Election Day?
+#
 # ## Reference
+#
 # - Prediction Market: Metaculus
 # - Link: [here](https://www.metaculus.com/questions/5298/acb-confirmed-before-november-3-2020/)
 # - Close Date: 2020-10-14
