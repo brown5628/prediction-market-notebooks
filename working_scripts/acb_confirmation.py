@@ -39,3 +39,23 @@ undivided_gov_nomination * general_mortality * confirmation_window
 #%% [markdown]
 #### Prediction
 #Adjusting the references classes upwards due to the context names above moves a ~75% to an ~85%. 
+
+#%% [markdown]
+### Revision 1
+#*Updated 2020-10-04*
+#### Comments
+#No major updates to the core thought process, but multiple Republican Senators coming down with COVID-19 appear to have made it more unlikely that the confirmation will not be able to happen within the accelerated schedule.
+#
+#In hindsight, don't think the math of the original prediction works with the inclusion of Predictit since it is double counting data. Revising to take that into account, and flagging that there has to be a better way of doing this.
+#
+#Going to feed in a personal belief as to how confident I am that they can do it fast enough (2/3). Also going to express my belief that this nominee is more likely than others to be confirmed via the model rather than a post model adjustment. Setting that adjustor to make it 2x as likely that she will be confirmed than the historical reference class.
+#### Revised models
+#%%
+personal_speed_belief = 2/3
+personal_nomimation_adjuster = (1-undivided_gov_nomination)/2
+
+(undivided_gov_nomination + personal_nomimation_adjuster) * general_mortality * personal_speed_belief
+
+#%% [markdown]
+#### Prediction
+#Final result is ~62%. Plugging in with no adjustments.
